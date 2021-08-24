@@ -50,25 +50,30 @@ PRIMARY KEY(idVente)
 );
 
 
-INSERT INTO Produit VALUES (NULL,'001','Briquet',30,350);
-INSERT INTO Produit VALUES (NULL,'002','Savon',20,700);
-INSERT INTO Produit VALUES (NULL,'003','Doritos',40,2000);
-INSERT INTO Produit VALUES (NULL,'004','Cahier 100pg',15,1300);
-INSERT INTO Produit VALUES (NULL,'005','Salto chips',17,500);
-INSERT INTO Produit VALUES (NULL,'001','Big cola',30,350);
-INSERT INTO Produit VALUES (NULL,'002','Mars',20,700);
-INSERT INTO Produit VALUES (NULL,'003','Pringels',40,2000);
-INSERT INTO Produit VALUES (NULL,'004','Cristalline 1L',15,1300);
-INSERT INTO Produit VALUES (NULL,'005','Nickel',17,500);
-INSERT INTO Produit VALUES (NULL,'001','Mais doux',30,350);
-INSERT INTO Produit VALUES (NULL,'002','Oeuf',20,700);
-INSERT INTO Produit VALUES (NULL,'003','Carotte',40,2000);
-INSERT INTO Produit VALUES (NULL,'004','Farilac',15,1300);
-INSERT INTO Produit VALUES (NULL,'005','Yaourt',17,500);
+INSERT INTO Categorie VALUES(NULL,'Boisson');
+INSERT INTO Categorie VALUES(NULL,'Snack');
+INSERT INTO Categorie VALUES(NULL,'Cuisine');
+
+
+INSERT INTO Produit VALUES (NULL,'1','Big Cola 1,5L',4500);
+INSERT INTO Produit VALUES (NULL,'1','Cristalline 1L',1500);
+INSERT INTO Produit VALUES (NULL,'1','Volnic 1L',1500);
+INSERT INTO Produit VALUES (NULL,'1','Djino',1500);
+INSERT INTO Produit VALUES (NULL,'1','Tampico',2000);
+INSERT INTO Produit VALUES (NULL,'2','Salto Chips',500);
+INSERT INTO Produit VALUES (NULL,'2','Doritos',2000);
+INSERT INTO Produit VALUES (NULL,'2','Pringels',5000);
+INSERT INTO Produit VALUES (NULL,'2','Cacapigeon',2000);
+INSERT INTO Produit VALUES (NULL,'2','Chevro',2000);
+INSERT INTO Produit VALUES (NULL,'3','Oeuf',600);
+INSERT INTO Produit VALUES (NULL,'3','Carrote',600);
+INSERT INTO Produit VALUES (NULL,'3','Poivre',500);
+INSERT INTO Produit VALUES (NULL,'3','Carry',500);
+INSERT INTO Produit VALUES (NULL,'3','Sel',200);
+
 
 INSERT INTO Caisse VALUES(NULL,'Numero1');
 INSERT INTO Caisse VALUES(NULL,'Numero2');
-
 
 
 
