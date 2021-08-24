@@ -1,6 +1,4 @@
 
-create database oneday;
-use caisse;
 
 CREATE TABLE Categorie (
 idCategorie int NOT NULL AUTO_INCREMENT,
@@ -19,7 +17,7 @@ CREATE TABLE Produit (
 idProduits int NOT NULL AUTO_INCREMENT,
 idCategorie int,
 nom_produit VARCHAR(20),
-prixUnitaire int,
+prixUnitaire float,
 PRIMARY KEY(idProduits)
 ); 
 
@@ -31,7 +29,7 @@ CREATE TABLE Admins (
 idAdmins int NOT NULL AUTO_INCREMENT,
 user VARCHAR(20),
 mdp VARCHAR(20),
-PRIMARY KEY(idAmin)
+PRIMARY KEY(idAmins)
 );
 
 CREATE TABLE Vente(
@@ -68,8 +66,6 @@ INSERT INTO Produit VALUES (NULL,'3','Sel',200);
 
 INSERT INTO Caisse VALUES(NULL,'Numero1');
 INSERT INTO Caisse VALUES(NULL,'Numero2');
+INSERT INTO Caisse VALUES(NULL,'Numero3');
 
-
-
-
-create view listeAchat as select Achat.idAchat,Caisse.Numero,Produit.code,Produit.designation,Achat.quantiter,Produit.prixUnitaire,Achat.Montant,Caisse.idCaisse from Achat join Caisse on Achat.idCaisse=Caisse.idCaisse join Produit on Produit.idProduits=Achat.idProduits;
+INSERT INTO Admins VALUES(NULL,'oneday',sha1("motdepasse"));
