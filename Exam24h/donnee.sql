@@ -1,7 +1,19 @@
 
-DROP DATABASE caisse;
-create database caisse;
+create database oneday;
 use caisse;
+
+CREATE TABLE Categorie (
+idCategorie int NOT NULL AUTO_INCREMENT,
+Categorie VARCHAR(100),
+PRIMARY KEY(idCategorie)
+);
+
+CREATE TABLE Caisse (
+idCaisse int NOT NULL AUTO_INCREMENT,
+Caisse Varchar(20),
+PRIMARY KEY(idCaisse)
+);
+
 
 CREATE TABLE Produit (
 idProduits int NOT NULL AUTO_INCREMENT,
@@ -9,36 +21,18 @@ idCategorie int,
 nom_produit VARCHAR(20),
 prixUnitaire int,
 PRIMARY KEY(idProduits)
-)ENGINE=InnoDb; 
-
-CREATE TABLE Caisse (
-idCaisse int NOT NULL AUTO_INCREMENT,
-Numero int,
-PRIMARY KEY(idCaisse)
-)ENGINE=InnoDb; 
+); 
 
 
-CREATE TABLE Categorie (
-idCategorie int NOT NULL AUTO_INCREMENT,
-Categorie int,
-PRIMARY KEY(idCategorie)
-)ENGINE=InnoDb; 
 
-CREATE TABLE Achat (
-idAchat int NOT NULL AUTO_INCREMENT,
-idCaisse int,
-idProduits int,
-quantiter int,
-Montant float,
-PRIMARY KEY(idAchat)
-)ENGINE=InnoDb; 
+
 
 CREATE TABLE Admins (
 idAdmins int NOT NULL AUTO_INCREMENT,
 user VARCHAR(20),
 mdp VARCHAR(20),
 PRIMARY KEY(idAmin)
-)ENGINE=InnoDb; 
+);
 
 CREATE TABLE Vente(
 idVente int NOT NULL AUTO_INCREMENT,
