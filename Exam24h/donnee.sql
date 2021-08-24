@@ -29,7 +29,7 @@ CREATE TABLE Admins (
 idAdmins int NOT NULL AUTO_INCREMENT,
 user VARCHAR(20),
 mdp VARCHAR(20),
-PRIMARY KEY(idAmins)
+PRIMARY KEY(idAdmins)
 );
 
 CREATE TABLE Vente(
