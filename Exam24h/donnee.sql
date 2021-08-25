@@ -48,21 +48,21 @@ INSERT INTO Categorie VALUES(NULL,'Snack');
 INSERT INTO Categorie VALUES(NULL,'Cuisine');
 
 
-INSERT INTO Produit VALUES (NULL,'1','Big Cola 1,5L',4500,'1');
-INSERT INTO Produit VALUES (NULL,'1','Cristalline 1L',1500,'2');
-INSERT INTO Produit VALUES (NULL,'1','Volnic 1L',1500,'3');
-INSERT INTO Produit VALUES (NULL,'1','Djino',1500,'4');
-INSERT INTO Produit VALUES (NULL,'1','Tampico',2000,'5');
-INSERT INTO Produit VALUES (NULL,'2','Salto Chips',500,'6');
-INSERT INTO Produit VALUES (NULL,'2','Doritos',2000,'7');
-INSERT INTO Produit VALUES (NULL,'2','Pringels',5000,'8');
-INSERT INTO Produit VALUES (NULL,'2','Cacapigeon',2000,'9');
-INSERT INTO Produit VALUES (NULL,'2','Chevro',2000,'10');
-INSERT INTO Produit VALUES (NULL,'3','Oeuf',600,'11');
-INSERT INTO Produit VALUES (NULL,'3','Carrote',600,'12');
-INSERT INTO Produit VALUES (NULL,'3','Poivre',500,'13');
-INSERT INTO Produit VALUES (NULL,'3','Carry',500,'14');
-INSERT INTO Produit VALUES (NULL,'3','Sel',200,'15');
+INSERT INTO Produit VALUES (NULL,'1','Big Cola 1,5L',4500,'1.jpg');
+INSERT INTO Produit VALUES (NULL,'1','Cristalline 1L',1500,'2.jpg');
+INSERT INTO Produit VALUES (NULL,'1','Volnic 1L',1500,'3.jpg');
+INSERT INTO Produit VALUES (NULL,'1','Djino',1500,'4.jpg');
+INSERT INTO Produit VALUES (NULL,'1','Tampico',2000,'5.jpg');
+INSERT INTO Produit VALUES (NULL,'2','Salto Chips',500,'6.jpg');
+INSERT INTO Produit VALUES (NULL,'2','Doritos',2000,'7.jpg');
+INSERT INTO Produit VALUES (NULL,'2','Pringels',5000,'8.jpg');
+INSERT INTO Produit VALUES (NULL,'2','Cacapigeon',2000,'9.jpg');
+INSERT INTO Produit VALUES (NULL,'2','Chevro',2000,'10.jpg');
+INSERT INTO Produit VALUES (NULL,'3','Oeuf',600,'11.jpg');
+INSERT INTO Produit VALUES (NULL,'3','Carrote',600,'12.jpg');
+INSERT INTO Produit VALUES (NULL,'3','Poivre',500,'13.jpg');
+INSERT INTO Produit VALUES (NULL,'3','Carry',500,'14.jpg');
+INSERT INTO Produit VALUES (NULL,'3','Sel',200,'15.jpg');
 
 
 INSERT INTO Caisse VALUES(NULL,'Numero1');
