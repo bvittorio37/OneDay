@@ -68,4 +68,26 @@ INSERT INTO Caisse VALUES(NULL,'Numero1');
 INSERT INTO Caisse VALUES(NULL,'Numero2');
 INSERT INTO Caisse VALUES(NULL,'Numero3');
 
+
+
+INSERT INTO Vente VALUES(NULL,'1','1','2',Now());
+INSERT INTO Vente VALUES(NULL,'2','3','10',Now());
+INSERT INTO Vente VALUES(NULL,'7','2','2',Now());
+INSERT INTO Vente VALUES(NULL,'8','1','3',Now());
+INSERT INTO Vente VALUES(NULL,'4','2','2',Now());
+INSERT INTO Vente VALUES(NULL,'3','1','3',Now());
+INSERT INTO Vente VALUES(NULL,'6','2','2',Now());
+INSERT INTO Vente VALUES(NULL,'9','1','3',Now());
+INSERT INTO Vente VALUES(NULL,'10','2','2',Now());
+INSERT INTO Vente VALUES(NULL,'11','1','3',Now());
+
 INSERT INTO Admins VALUES(NULL,'oneday',sha1("motdepasse"));
+
+/*montant*/
+create view listeVente as select quantite*PRODUIT.prixUnitaire as montant,vente.* from vente join produit on vente.idproduit=produit.idproduits;
+/*le plus vendue*/
+select * from Vente order by quantite desc;
+/*le plus vendue caisse*/
+ select sum(montant)as valeurApporte,IDCAISSE from listevente group by idcaisse ASC;
+/*le plus recent produit acheter*/
+select * from listevente  order by datedevente asc;
