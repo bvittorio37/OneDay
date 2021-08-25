@@ -77,8 +77,13 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
+<<<<<<< HEAD:SOURCE/application/config/database.php
 	'password' => 'YES',
 	'database' => 'oneday',
+=======
+	'password' => 'root',
+	'database' => 'caisse',
+>>>>>>> e36379e03e7e8ee62516ead1dd2dfe7baa852637:Exam24h/application/config/database.php
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

@@ -22,9 +22,15 @@
                         <div class="card mb-4">
                           <img src="<?php echo img_loader( $tableau['images'],'jpg'); ?>" class="card-img-top" alt="...">
                           <div class="card-body justify-content-center">
+<<<<<<< HEAD:SOURCE/application/views/index.php
                           <h5 class="card-title text-center"><?php echo $tableau['nom_produit'];?></h5>
                           <h6 class="card-subtitle mb-2 text-muted text-center"><?php echo $tableau['prixUnitaire'];?> Ar</h6>
                           <p class="pl-3"><a href="http://localhost/ETU1340_ETU1233/traitement/index" class="btn ml-5"><i class="fas fa-link"></i> Ajouter Panier</a></p>
+=======
+                          <h5 class="card-title text-center">Nom_poduit</h5>
+                          <h6 class="card-subtitle mb-2 text-muted text-center">200 Ar</h6>
+                          <p class="pl-3"><a href="#" class="btn ml-5"><i class="fas fa-link"></i> Visit Site</a></p>
+>>>>>>> e36379e03e7e8ee62516ead1dd2dfe7baa852637:Exam24h/application/views/index.php
               
                           </div>
                     </div>

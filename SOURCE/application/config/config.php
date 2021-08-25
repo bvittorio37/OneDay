@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD:SOURCE/application/config/config.php
 $config['base_url'] = 'http://localhost/ETU1340_ETU1233/';
+=======
+$config['base_url'] = 'http://localhost/Examen25h/';
+>>>>>>> e36379e03e7e8ee62516ead1dd2dfe7baa852637:Exam24h/application/config/config.php
 
 /*
 |--------------------------------------------------------------------------
