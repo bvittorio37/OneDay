@@ -28,7 +28,7 @@ PRIMARY KEY(idProduits)
 CREATE TABLE Admins (
 idAdmins int NOT NULL AUTO_INCREMENT,
 user VARCHAR(20),
-mdp VARCHAR(20),
+mdp VARCHAR(100),
 PRIMARY KEY(idAdmins)
 );
 
