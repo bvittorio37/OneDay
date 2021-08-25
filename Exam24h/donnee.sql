@@ -38,7 +38,7 @@ idVente int NOT NULL AUTO_INCREMENT,
 idProduits int,
 idCaisse int,
 quantite int,
-datedeVente date,
+datedeVente datetime,
 PRIMARY KEY(idVente)
 );
 
