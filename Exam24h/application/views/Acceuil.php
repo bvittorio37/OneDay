@@ -5,7 +5,7 @@
         <ul>
           <li class="ps-banner" data-index="rs-2972" data-transition="random" data-slotamount="default"
             data-hideafterloop="0" data-hideslideonmobile="off" data-rotate="0"><img class="rev-slidebg"
-              src="images/slider/one.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+              src=" <?php echo css_loader('slider/one');?>" alt="" data-bgposition="center center" data-bgfit="cover"
               data-bgrepeat="no-repeat" data-bgparallax="5" width="200" data-no-retina>
             <div class="tp-caption ps-banner__header" id="layer-1" data-x="left" data-hoffset="['-60','15','15','15']"
               data-y="['middle','middle','middle','middle']" data-voffset="['-150','-120','-150','-170']"
