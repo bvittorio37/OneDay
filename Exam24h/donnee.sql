@@ -85,7 +85,7 @@ INSERT INTO Vente VALUES(NULL,'11','1','3',Now());
 INSERT INTO Admins VALUES(NULL,'oneday',sha1("motdepasse"));
 
 /*montant*/
-create view listeVente as select quantite*PRODUIT.prixUnitaire as montant,vente.* from vente join produit on vente.idproduit=produit.idproduits;
+create view listeVente as select quantite*PRODUIT.prixUnitaire as montant,vente.* from vente join produit on vente.idproduits=produit.idproduits;
 /*le plus vendue*/
 select produit.nom_produit,categorie.categorie from Vente join produit on produit.idProduits=Vente.idProduits join categorie on categorie.idcategorie=produit.idcategorie order by quantite desc;
 /*le plus vendue caisse*/
