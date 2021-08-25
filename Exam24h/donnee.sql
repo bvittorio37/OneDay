@@ -1,3 +1,5 @@
+create database oneday;
+    use oneday;
 
 
 CREATE TABLE Categorie (
