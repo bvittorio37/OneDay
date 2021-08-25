@@ -14,7 +14,7 @@
   <!-- Bootstrap core CSS -->
   <link href="<?php echo css_loader("bootstrap.min"); ?>" rel="stylesheet">
   <link href="<?php echo css_loader("bootstrap.css");?>" rel="stylesheet" >
-
+  
   <!-- Custom styles for this template -->
   <link href="<?php echo css_loader("shop-homepage"); ?>" rel="stylesheet">
 
@@ -25,7 +25,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Supermarcher de Tana</a>
+      <a class="navbar-brand" href="#">Gestion du supermache</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,30 +34,26 @@
       </div>
     </div>
   </nav>
-
+<br>
   <!-- Page Content -->
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="row">
-
-      <div class="col-lg-3">
-   
-   
-
-      </div>
-      <!-- /.col-lg-3 -->
-
-      <div class="col-lg-7">
-
-        <div class="row">
-
-          <div class="col-md-10">
-            <br>
-
+		
+					<div class="col-md-2 ">
+					<a href="http://localhost/Back/produit/redirectionAjout/saisieAjout.php" style="border-radius:30px" class="nav-link btn btn-outline-primary mb-2" >Ajout Produit</a>
+          <a href="http://localhost/Back/produit/redirectionState/Statistique.php" style="border-radius:30px" class="nav-link btn btn-outline-primary mb-2" >Les Statistiques</a>
+          <a href="http://localhost/Back/produit/redirectionliste/listeproduit.php" style="border-radius:30px" class="nav-link btn btn-outline-primary mb-2" >Liste Produit</a>
+          <a href="http://localhost/Back/produit/redirectionAjoutC/saisieCategorie.php" style="border-radius:30px" class="nav-link btn btn-outline-primary mb-2" >AjoutCategorie</a>
+          <form class="ps-search--header" action="Search" method="get">
+            <input style="border-radius:30px" class="nav-link btn btn-outline-primary mb-2" name="nom" type="text" placeholder="Chercher les plat">
+            <button class="btn btn-primary" style="margin-left:60px;">chercher</button>
+          </form>
+					<a  href="http://localhost/Back/traitement/Logout" class="nav-link btn btn-outline-success mt-2 mb-2" style="border-radius:30px" href="disconnect.php">Deconnecter</a>
+				
+				</div>
            <?php include $get ;?>
-          </div>
 
-        </div>
         <!-- /.row -->
 
       </div>
@@ -71,8 +67,13 @@
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    <div class="container" style="margin_bottom=500px";>
+      
+  
+       
+      
+      <p class="m-0 text-center text-white" >Copyright &copy; Your Website 2020</p>
+   
     </div>
     <!-- /.container -->
   </footer>

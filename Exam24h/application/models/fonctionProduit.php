@@ -62,6 +62,17 @@ class fonctionProduit extends CI_Model
 	}
 
     
+    function insertCategorie($nom)
+	{
+        $image="upload.jpg";
+		$sql = "insert into Categorie values (NULL,'%s')";
+		$sql=sprintf($sql,$nom);
+		$this->db->query($sql);
+        echo $this->db->affected_rows();
+	
+	}
+
+    
     public function deleteproduit($idproduit)
     {
         $sql=$this->db->query("DELETE from produit where idProduits=".$idproduit."");

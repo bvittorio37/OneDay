@@ -2,9 +2,9 @@
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	if(!function_exists('img_loader'))
 	{
-		function img_loader($name, $format)
+		function img_loader($name)
 		{
-			return site_url()."/assets/images/".$name.".".$format;
+			return site_url()."/assets/images/".$name;
 		}
 	}
 
